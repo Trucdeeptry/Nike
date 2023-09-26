@@ -208,10 +208,9 @@
     background-image:url(../image/Background.png);
     display: flex;
     position: relative;
-    width: 100%     ;
-    height: 100vh;
+    width: 100%;
     background-size: cover;
-    
+    padding-bottom: 100px;
 }
 .slide_title{
    margin-top: 100px;
@@ -256,12 +255,12 @@
 
 .sneaker{
     position: absolute;
-    margin-top: 150px;
-    right: 100px;
+    top: 150px;
+  
 }
 .mark{
     position: absolute;
-    margin-top: 90px;
+    top: 100px;
     right: 550px;
 }
 /* NEW arrials */
@@ -334,12 +333,18 @@
 .arrivals_list{
     display: flex;
     padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+   
+}
+.arrivals_list::-webkit-scrollbar{
+    display: none;
 }
 /* COLLECTION */
 .collection_img{
     display: flex;
 }
-.collection{
+#collection{
     margin-top: 100px;
 }
 .collection_link-img{
@@ -368,8 +373,9 @@
     font-size: 25px;
 }
 /* new collection */
-.new_collection{
+#new_collection{
     margin-top: 100px;
+   
 }
 .news_title{
     font-size: 30px;
@@ -492,3 +498,219 @@
     opacity: 0.7;
     font-size: 14px;
 }
+.utility_mobile{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+/* Reponsive mobile */
+@media (max-width: 739px){ 
+   
+    .header_shopping-cart{
+        width: 30rem;
+    }
+    .utility_mobile{
+        display: flex;
+    }
+   .header_nav{
+    display: none;
+   }
+   .header{
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    position: inherit;
+   }
+   .header_logo{
+    padding-left: 2rem;
+   }
+   .utility_items{
+    border: none;
+
+   }
+   .header_logo{
+    border: none;
+   }
+   .utility_favorite{
+    display: none;
+   }
+   .between{
+    display: none;
+   }
+   .collection_img{
+    display: block;
+   }
+   .grid__row{
+    flex-direction: column;
+   }
+   .slide_title h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+   
+}
+.slide_title {
+    margin-left: 0px;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sneaker, .mark{
+    display: none;
+}
+.sneaker{
+    position: inherit;
+    width: 100%;
+}
+
+.sub_text{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+.title_span{
+    padding: 20px;
+}
+.title_text{
+    margin-top: 20px;
+}
+.content{
+    margin: 20px;
+}
+.grid__column-4{
+    width: 80%;
+}
+.items_shooes{
+    width: inherit;
+}
+.narrow{
+    display: none;
+}
+.header_text{
+    font-size: 30px;
+}
+.header_all-items{
+    font-size: 15px;
+}
+.img_sub{
+   position: initial;
+   margin-bottom: 50px;
+}
+.collection_link-img img{
+    width: 100%;
+}
+.news_img{
+    width: 100%;
+}
+.news_sub{
+    margin-bottom: 50px;
+}
+.grid__column-2{
+    width: 100%;
+}
+.sport_img{
+    width: 100%;
+}
+.grid__column-3{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.intro_wrapper{
+    flex-direction: column;
+}
+.intro{
+    padding: 20px 0;
+}
+.intro_header{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.club{
+    flex-direction: column;
+}
+.club_header{
+    text-align: center;
+}
+.footer_nav{
+    padding: 20px;
+}
+.footer_nav-items{
+    display: none;
+}
+.shop_sport{
+    margin-top: 0;
+}
+.nav_header{
+    margin: 15px  0;
+}
+.footer_end{
+    padding: 25px;
+}
+.grid_column-end{
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+.end_items-bold{
+    margin: 15px 0;
+}
+.end_items{
+    display: none;
+}
+.nav_header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.policy_list{
+    display: initial;
+    margin: 0;
+    padding: 0;
+}
+.policy_items{
+    padding: 20px 0;
+    font-size: 16px;
+}
+.copy_right {
+    padding: 10px;
+}
+.utility_mobile{
+    position: relative;
+}
+.header_nav-mobile{
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 60px;
+    z-index: 1;
+    width: 100vw;
+    
+}
+.nav_list-mobile{
+    flex-direction: column;
+    padding: 20px;
+}
+
+#withlabel:checked ~ .header_nav-mobile{
+    display: block;
+ }
+ #withlabel{
+    display: none;
+    
+ }
+.nav_items-mobile  a{
+    margin-right: 0;
+    display: block;
+}
+.nav_items-mobile{
+   display: block;
+   padding-bottom: 20px;
+}
+}
+
+

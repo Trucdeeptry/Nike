@@ -14,18 +14,17 @@
     <link rel="shortcut icon" href="./assets/image/nikelogo.png" type="image/x-icon"> 
     <title>Nike</title>
 <body>
-    <h1 class="mobile">This Website not available in mobile. Please try agian later / Website chưa hỗ trợ trên Mobile. Vui lòng thử lại sau</h1>
     <div class="header">
         <div class="header_logo">
             <img src="./assets/image/nikelogo.png" alt="" class="header_logo-nike">
         </div>
         <div class="header_nav">
             <ul class="nav_list">
-                <li class="nav_items"><a href="">New arrivals</a></li>
-                <li class="nav_items"><a href="">Men</a></li>
-                <li class="nav_items"><a href="">Women</a></li>
-                <li class="nav_items"><a href="">Kids</a></li>
-                <li class="nav_items"><a href="">Collection</a></li>
+                <li class="nav_items"><a href="#new_arrivals">New arrivals</a></li>
+                <li class="nav_items"><a href="#collection">Men</a></li>
+                <li class="nav_items"><a href="#collection">Women</a></li>
+                <li class="nav_items"><a href="#collection">Kids</a></li>
+                <li class="nav_items"><a href="#new_collection">Collection</a></li>
             </ul>
         </div>
         <div class="header_utility">
@@ -36,10 +35,11 @@
                 </li>
                 </a> 
                <a href="">
-                <li class="utility_items">
+                <li class="utility_items utility_favorite">
                     <img class="utility_icon" src="./assets/font/Favorite.svg" alt="">
                 </li>
                 </a> 
+                
               <div href="" class="header_cart">
                 <li class="utility_items">
                     <img class="utility_icon" src="./assets/font/bag.svg" alt="">
@@ -174,6 +174,26 @@
                     </div> 
                 </li>
               </div>
+            
+                <li class="utility_items utility_mobile">
+                    <label style="display: inline-flex;" for="withlabel">
+                        <img class="utility_icon" src="./assets/image/Cart.svg" alt="">
+                    </label>
+                    <input type="checkbox"  id="withlabel">
+            
+                        <div class="header_nav mobile header_nav-mobile">
+                            <ul class="nav_list nav_list-mobile">
+                                <li class="nav_items nav_items-mobile"><a href="#new_arrivals">New arrivals</a></li>
+                                <li class="nav_items nav_items-mobile"><a href="#collection">Men</a></li>
+                                <li class="nav_items nav_items-mobile"><a href="#collection">Women</a></li>
+                                <li class="nav_items nav_items-mobile"><a href="#collection">Kids</a></li>
+                                <li class="nav_items nav_items-mobile"><a href="#new_collection">Collection</a></li>
+                            </ul>
+                        </div>
+                  
+                 
+                </li>
+                
                
             </ul>
 
@@ -189,8 +209,12 @@
                 <h1 class="title_span">
                     VOODOO
                 </h1>
-           
-            
+                <div class="img_wrapper">
+                    <img src="/assets/image/Limited Edition Circle.png" alt="" class="mark">
+                    <img src="./assets/image/Image Shoes.png" alt="" class="sneaker">
+                    <img src="./assets/image/shoes-mobile.png" alt="" class="sneaker mobile">
+        
+                </div>
             <p class="sub_text">The Nike Dunk Low SE Jackpot GS is a low-cut
                 sneaker with hints of grey, white, blue, and red.</p>
                 <a href="">
@@ -198,18 +222,15 @@
                     <h2 class="action_text">SHOP NOW!</h2>
                     </div>
                 </a>
+            </div>
                 
-        </div>
        
         
-        <div class="img_wrapper">
-            <img src="/assets/image/Limited Edition Circle.png" alt="" class="mark">
-            <img src="./assets/image/Image Shoes.png" alt="" class="sneaker">
-        </div>
+       
     </div>
     <div class="content">
          <!-- NEW arrivals -->
-        <div class="new_arrivals">
+        <div id="new_arrivals">
             <div class="arrivals_header">
                 <div class="header_container">
                     <h1 class="header_text" style="margin-bottom: 0;">NEW ARRIVALS</h1>
@@ -228,15 +249,15 @@
             <!-- items -->
             <div class="arrivals_container">
                 <div class="grid">
-                    <div class="gird_row">
+                    <div class="grid_row">
                         <ul class="arrivals_list">
                             <div class="grid__column-4">
                                 <a href="">
 
                                     <li class="arrivals_items">
-                                        <div class="img_wrapper">
+                                        
                                             <img src="./assets/image/nikeairforce1.jpg" alt="" class="items_shooes">
-                                        </div>
+                                        
                                         <div class="shoes_info">
                                             <p class="info_name">Nike Aiir Force 1 </p>
                                             <p class="info_sub">Men’s shoes</p>
@@ -249,9 +270,9 @@
                                 <a href="">
 
                                     <li class="arrivals_items">
-                                        <div class="img_wrapper">
+                                        
                                             <img src="./assets/image/NikeAirMax.jpg" alt="" class="items_shooes">
-                                        </div>
+                                        
                                         <div class="shoes_info">
                                             <p class="info_name">Nike Air Max</p>
                                             <p class="info_sub">Men’s shoes</p>
@@ -264,9 +285,9 @@
                                 <a href="">
 
                                     <li class="arrivals_items">
-                                        <div class="img_wrapper">
+                                        
                                             <img src="./assets/image/NikeAirMax95.jpg" alt="" class="items_shooes">
-                                        </div>
+                                        
                                         <div class="shoes_info">
                                             <p class="info_name">Nike Air Max 95</p>
                                             <p class="info_sub">Men’s shoes</p>
@@ -279,9 +300,9 @@
                                 <a href="">
 
                                     <li class="arrivals_items">
-                                        <div class="img_wrapper">
+                                        
                                             <img src="./assets/image/NikeAirMaxPlus.jpg" alt="" class="items_shooes">
-                                        </div>
+                                        
                                         <div class="shoes_info">
                                             <p class="info_name">Nike Air Max Plus</p>
                                             <p class="info_sub">Men’s shoes</p>
@@ -290,14 +311,43 @@
                                     </li>
                                 </a>
                             </div>
-                          
+                            <div class="grid__column-4">
+                                <a href="">
+
+                                    <li class="arrivals_items">
+                                        
+                                            <img src="./assets/image/NikeZoomFly.jpg" alt="" class="items_shooes">
+                                        
+                                        <div class="shoes_info">
+                                            <p class="info_name">Nike Zoom Fly</p>
+                                            <p class="info_sub">Unisex shoes</p>
+                                            <p class="info_price">1279,99$</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="grid__column-4">
+                                <a href="">
+
+                                    <li class="arrivals_items">
+                                        
+                                            <img src="./assets/image/NikeAirMaxTW.jpg" alt="" class="items_shooes">
+                                        
+                                        <div class="shoes_info">
+                                            <p class="info_name">Nike Air Max TW</p>
+                                            <p class="info_sub">Men’s shoes</p>
+                                            <p class="info_price">789,99$</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </div>
             
         </div>
-        <div class="collection">
+        <div id="collection">
             <h1 class="header_text">SHOP BY COLLECTION</h1>
             <div class="collection_img">
                 <a href="" class="collection_link-img">
@@ -320,7 +370,7 @@
                 </a>
             </div>
         </div>
-        <div class="new_collection">
+        <div id="new_collection">
             <h1 class="header_text">OUR NEW COLLECTION</h1>
             <div class="grid__row">
                 <div class="grid__column-2">
@@ -386,11 +436,11 @@
                 <div class="gird__row">
                     <div class="intro_wrapper">
                         <div class="grid__column-2" style="margin-right: 30px;" >
-                            <h1 class="header_text">IT STARTED WITH A HANDSHAKE</h1>
+                            <h1 class="header_text intro_header">IT STARTED WITH A HANDSHAKE</h1>
                             <p class="intro_sub">It started with a handshake. Two visionaries, Bill Bowerman and his University of Oregon runner Phil Knight, thought they could do a better job of designing and selling shoes to runners. They were right. Today Nike is the world’s leading innovator in athletic footwear, apparel, equipment and accessories. Along the way, Nike helped the world’s best athletes win races, games and championships.</p>
                         </div>
                         <div class="grid__column-2"  >
-                            <h1 class="header_text">WE LEAD WITH INNOVATIVE PRODUCT</h1>
+                            <h1 class="header_text intro_header">WE LEAD WITH INNOVATIVE PRODUCT</h1>
                             <p class="intro_sub">True innovation isn’t just new and different. It’s new and better. It’s surprising. Sometimes it’s shocking. Nobody does that better than Nike. Yet we know you can’t anoint yourself as innovative the consumer ultimately decides that for themselves. That’s why we spend so much time with athletes and consumers listening, observing, studying and then creating products that enhance athletic performance and overall consumer experiences.</p>
                         </div>
                     </div>
@@ -399,7 +449,7 @@
             </div>
         </div>
         <div class="club">
-            <h1 class="header_text" style="margin: 0; font-size: 25px;">JOIN OUR NIKE CLUB AND GET 15% OFF</h1>
+            <h1 class="header_text club_header" style="margin: 0; font-size: 25px;">JOIN OUR NIKE CLUB AND GET 15% OFF</h1>
             <a href="">
                 <div class="action" style="margin-left: 25px; margin-top: 0; ">
                 <h2 class="action_text" style="font-size: 25px; line-height: 50px;">SIGNUP FOR FREE!</h2>
@@ -509,7 +559,15 @@
                     </ul>
                 </div>
                 <div class="grid_column">
-                    <h1 class="nav_header" style="color: white;" >GET HELP</h1>
+                    <div class="nav_header-wrapper">
+                       
+                            <h1 class="nav_header" style="color: white;" >GET HELP</h1>
+                            <a href="">
+
+                                <img src="./assets/font/plus.svg" alt="" class="mobile plus">
+                            </a>
+                      
+                    </div>
                     <ul class="end_list">
                         <a href="">
 
@@ -534,7 +592,13 @@
                     </ul>
                 </div>
                 <div class="grid_column">
-                    <h1 class="nav_header" style="color: white;" >ABOUT NIKE</h1>
+                    <div class="nav_header-wrapper">
+                        <h1 class="nav_header" style="color: white;" >ABOUT NIKE</h1>
+                        <a href="">
+
+                            <img src="./assets/font/plus.svg" alt="" class="mobile plus">
+                        </a>
+                    </div>
                     <ul class="end_list">
                         <a href="">
 
@@ -559,7 +623,13 @@
                     </ul>
                 </div>
                 <div class="grid_column">
-                    <h1 class="nav_header" style="color: white;" >JOIN US</h1>
+                    <div class="nav_header-wrapper">
+                        <h1 class="nav_header" style="color: white;" >JOIN US</h1>
+                        <a href="">
+
+                            <img src="./assets/font/plus.svg" alt="" class="mobile plus">
+                        </a>
+                    </div>
                     <ul class="end_list">
                         <a href="">
 
@@ -576,7 +646,13 @@
                     </ul>
                 </div>
                 <div class="grid_column">
-                    <h1 class="nav_header" style="color: white;" >SOCIAL</h1>
+                    <div class="nav_header-wrapper">
+                        <h1 class="nav_header" style="color: white;" >SOCIAL</h1>
+                        <a href="">
+
+                            <img src="./assets/font/plus.svg" alt="" class="mobile plus">
+                        </a>
+                    </div>
                     <ul class="end_list" style="display: flex;">
                         <a href="https://www.facebook.com/trucdeeptry" target="_blank">
                             <li class="end_items" style="margin: 0 15px;"> <img src="./assets/image/bxl-facebook.svg" alt="" class="end_img"> </li>
@@ -633,3 +709,4 @@
     </div>
 </body>
 </html>
+
