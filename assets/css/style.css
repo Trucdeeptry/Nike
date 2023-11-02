@@ -1,9 +1,9 @@
 /* Header */
 
-.content{
+#content{
     margin: 100px;
 }
-.header{
+#header{
     display: flex;
     height: 8rem;
     justify-content: space-between;
@@ -204,19 +204,19 @@
     height: 8rem;
     width: 100%;
 }
-.slide{
-    background-image:url(../image/Background.png);
-    display: flex;
+#slide{
     position: relative;
     width: 100%;
-    background-size: cover;
-    padding-bottom: 100px;
 }
+
 .slide_title{
    margin-top: 100px;
    margin-left: 100px;
     width: 50%;
 
+}
+.slide_img-mobile{
+    display: none;
 }
 .slide_title h1{
     font-size: 130px;
@@ -516,7 +516,7 @@
    .header_nav{
     display: none;
    }
-   .header{
+   #header{
     justify-content: space-between;
     width: 100%;
     padding: 0;
@@ -579,7 +579,7 @@
 .title_text{
     margin-top: 20px;
 }
-.content{
+#content{
     margin: 20px;
 }
 .grid__column-4{
@@ -710,6 +710,12 @@
 .nav_items-mobile{
    display: block;
    padding-bottom: 20px;
+}
+.slide_img-mobile{
+    display: block;
+}
+.slide_img{
+    display: none;
 }
 }
 
