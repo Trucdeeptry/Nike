@@ -16,4 +16,10 @@ buttonRight.addEventListener('click', function() {
 });
 
 
-
+if ('scrollBehavior' in document.documentElement.style) {
+    // Trình duyệt hỗ trợ thuộc tính 'scroll-behavior: smooth'
+    console.log('Trình duyệt hỗ trợ scroll-behavior: smooth.');
+} else {
+    // Trình duyệt không hỗ trợ thuộc tính 'scroll-behavior: smooth'
+    console.log('Trình duyệt không hỗ trợ scroll-behavior: smooth.');
+}
