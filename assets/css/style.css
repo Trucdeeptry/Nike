@@ -313,10 +313,7 @@
      object-fit: cover;
 
 }
-.arrivals_list{
-    scroll-behavior: smooth;
 
-}
 .arrivals_items:hover .items_shooes{
     opacity: 0.85;
 }
@@ -345,7 +342,7 @@
     padding: 0;
     overflow-x: auto;
     white-space: nowrap;
-   
+    scroll-behavior: smooth;
 }
 .arrivals_list::-webkit-scrollbar{
     display: none;
